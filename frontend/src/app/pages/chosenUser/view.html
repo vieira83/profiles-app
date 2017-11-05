@@ -1,0 +1,74 @@
+<div ng-if="$ctrl.user_id" ng-model="$ctrl.user_id" ng-cloak class="container user-profile">
+  <br><br>
+  <div class="row">
+    <div class="col-md-10 center-block">
+      <div class="panel panel-default">
+        <div class="panel-heading"><h4>User Profile</h4></div>
+        <div class="panel-body">
+          <div class="box user-profile-info">
+            <div class="user-profile-body">
+              <div class="col-sm-3">
+                <div align="center"><img alt="User Pic"
+                                         src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"
+                                         id="profile-image1" class="img-circle img-responsive">
+
+                  <input id="profile-image-upload" class="hidden" type="file">
+                  <div style="color:#999;">click here to change profile image</div>
+
+                </div>
+                <br>
+              </div>
+              <div class="col-sm-6 text-left">
+                <br>
+                <h4 class="text-center">Company Info</h4>
+                <div class="col-sm-4 col-xs-6 label-title text-right"> Username:</div>
+                <div class="col-sm-8 username text-left">{{$ctrl.user.username}}</div>
+                <div class="clearfix"></div>
+
+                <div class="col-sm-4 col-xs-6 label-title text-right">Company BS:</div>
+                <div class="col-sm-8  text-left"> {{$ctrl.user.company.bs}}</div>
+                <div class="clearfix"></div>
+
+                <div class="col-sm-4 col-xs-6 label-title text-right">Website:</div>
+                <div class="col-sm-8 text-left"> {{$ctrl.user.website}}</div>
+                <div class="clearfix"></div>
+
+                <div class="col-sm-4 col-xs-6 label-title text-right">Catch Phrase: :</div>
+                <div class="col-sm-8 text-left"> {{$ctrl.user.company.catchPhrase}}</div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="row">
+                <hr style="margin:5px 0 5px 0;">
+                <h4>Personal Info</h4>
+                <div class="col-sm-5 col-xs-6 label-title text-right"> Name:</div>
+                <div class="col-sm-7 fullname text-left">{{$ctrl.user.name}}</div>
+                <div class="clearfix"></div>
+
+                <div class="col-sm-5 col-xs-6 label-title text-right">Email:</div>
+                <div class="col-sm-7 email text-left"> {{$ctrl.user.email}}</div>
+                <div class="clearfix"></div>
+
+                <div class="col-sm-5 col-xs-6 label-title text-right">Phone:</div>
+                <div class="col-sm-7 phone text-left"> {{$ctrl.user.phone}}</div>
+                <div class="clearfix"></div>
+
+                <div class="col-sm-5 col-xs-6 label-title text-right">Street:</div>
+                <div class="col-sm-7 street text-left"> {{$ctrl.user.address.street}}</div>
+                <div class="clearfix"></div>
+
+                <div class="col-sm-5 col-xs-6 label-title text-right ">City:</div>
+                <div class="col-sm-7 city text-left">{{$ctrl.user.address.city}}</div>
+
+                <div class="col-sm-5 col-xs-6 label-title text-right">Zip Code:</div>
+                <div class="col-sm-7 zip text-left">{{$ctrl.user.address.zipcode}}</div>
+                <!-- /.user-profile-body -->
+              </div>
+            </div>
+            <!-- /.box -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

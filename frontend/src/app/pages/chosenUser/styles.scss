@@ -1,0 +1,28 @@
+@import "../../../assets/styles/variables";
+
+.user-profile {
+  font-size: 14px;
+  background: $color_light_gray;
+  border: 1px solid darken($color_light_gray, 10%);
+
+  .user-profile-info {
+    .label-title {
+      font-weight: 600;
+    }
+  }
+
+  .row {
+    .center-block {
+      float: none;
+    }
+  }
+}
+
+@media ($tablet) {
+  .user-profile {
+    .user-profile-body {
+      text-align: center;
+    }
+  }
+}
+

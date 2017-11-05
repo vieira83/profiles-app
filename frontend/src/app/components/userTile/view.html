@@ -1,0 +1,9 @@
+<div class="user-tile" ng-cloak ng-click="$ctrl.chooseUser($ctrl.user)">
+    <div id="test-container">
+        <div class="tile blue" ng-class="{selected: $parent.$ctrl.selected == $ctrl.user.id}">
+       	 <img alt="User Pic" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" id="profile-image1" class="img-circle user-pic img-responsive">
+          <h4 class="tile-title">{{$ctrl.user.name}}</h3>
+          <!-- <a class="btn view" ng-show="$parent.$ctrl.selected != $ctrl.user.id">View Profile</a> -->
+        </div>
+    </div>
+</div>

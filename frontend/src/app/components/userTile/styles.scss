@@ -1,0 +1,71 @@
+@import "../../../assets/styles/variables";
+
+.user-tile {
+  .tile {
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    background: $color_white;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    color: #222;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.30), 0 1px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all 250ms linear;
+    min-height: 10px;
+    text-align: center;
+
+    .tile-title {
+      margin-top: 0px;
+      font-weight: 300;
+      display: inline-block;
+
+    }
+
+    img.user-pic {
+      width: 60px;
+      display: inline-block;
+      margin-right: 10px
+    }
+
+    .btn.view {
+      background: $color_white;
+      border-radius: 20px;
+      padding: 5px 10px;
+      margin-top: 1rem;
+      display: block;
+      margin: 10px 30px;
+    }
+
+    &.blue {
+      color: $color_white;
+      background: $color_blue;
+
+      &:hover {
+        background: darken($color_blue, 10%);
+      }
+    }
+
+    &.changing {
+      opacity: 0;
+    }
+
+    &.selected {
+      cursor: default;
+      background: darken($color_orange, 10%);
+      color: white;
+      &:hover {
+        background: darken($color_orange, 10%);
+      }
+    }
+
+    &.orange {
+      background: $color_orange;
+
+      &:hover {
+        background: darken($color_orange, 10%);
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@import "variables";
+@import "typography";
+
+[ng\:cloak], [ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.list-view, .choosen-user {
+  margin-top: 2rem;
+}
+
+[ui-view].ng-leave {
+  animation: fadeOut 0.5s;
+}
+
+[ui-view].ng-enter {
+  animation: fadeIn 0.5s;
+}

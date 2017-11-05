@@ -1,0 +1,9 @@
+{
+  "presets": ["es2015"],
+  "env": {
+    "test": {
+      "plugins": ["__coverage__", "rewire"]
+    }
+  },
+  "compact": false
+}

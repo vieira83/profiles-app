@@ -1,0 +1,12 @@
+<div class="container" ng-cloak>
+	<div class="panel panel-default">
+		<div class="panel-heading"><h4 class="profiles-title">Profiles</h4></div>
+		<div class="panel-body"> 
+			<h4 ng-if="$ctrl.users" class="text-center"> Select a Profile</h4>
+
+			<div ng-repeat="user in $ctrl.users">
+			    <user-tile class="col-sm-4"  user="user"></user-tile>
+			</div>
+		</div>
+	</div>
+</div>
