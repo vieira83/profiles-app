@@ -1,35 +1,3 @@
-#TODO
-
-Your task is to write a simple app for previewing user's detail. Given equirements:
-
-- Display users list as a tile list.
-- Make it possible to choose a user by clicking on a tile. 
-- Display chosen user (all details) in the separate view (`<div ui-view="chosenUser"></div>`).
-- Do not add new views (ui-view), but of course you can add components, directives, services etc.
-- Introduce clean styling to the application (you can use external libs like bootstrap etc.)
-- Keep the app responsive 
-- Support Chrome browser (current stable version).
-- Cover code with unit tests (please take a look at coverage report - higher is better, aim for 100%).
-- Write e2e test for given scenario: "When I click on a user's tile I can see user's details below the listing"
-- If something seems to be not clear please choose the best solution  
- 
-### What should I do when I'm finished?
-Please zip up your files and email them back, along with information about which features you have included in your solution.
- 
-#About the env
-
-Here is a quick introduction how to start the development
- 
-##Node 
-
-v6.10.3
-
-## Package manager ##
-The package manager chosen for SmartStock is [yarn](https://yarnpkg.com/). This is a new node package manager built on top of `npm`,
-aiming to fix all the minor issues that developers run into when using `npm`.
-
-To start using yarn you have to install the `yarn` command globally on your system. To do that follow
-[the yarn install guide](https://yarnpkg.com/en/docs/install) using the instructions for your environment.
 
 ## Installation ##
 To all frontend dependencies, first change your working directory to "frontend." Then, run the following command:
